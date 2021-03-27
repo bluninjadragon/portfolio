@@ -1,0 +1,27 @@
+* {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+body, h1 {
+    margin: 0;
+}
+
+img     {
+    margin: auto;
+}
+
+nav     {text-align: right;
+}
+
+.bgc    {background-color: turquoise ;}
+.pos-f  {position: fixed;} 
+.pos-s  {position: sticky;}
+.t-0    {top: 0;}
+.w-100  {width: 100%;}
+.pv     {padding: 24px 0;}
+.inline {display:inline}
+.center {text-align: center;}
+.color-w{color: white;}
