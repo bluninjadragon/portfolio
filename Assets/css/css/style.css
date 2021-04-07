@@ -3,6 +3,16 @@
     
 }
 
+/*come back to this. try to make it so that there is large
+padding but not fixed. Make background fixed */
+
+/*also see if you can combine to make this object oriented for now*/
+
+h1 {
+    margin: 0;
+    padding-top: 20px;
+}
+
 body {
     color:white;
     text-align: center;
@@ -16,7 +26,7 @@ section {
 
 nav     {text-align: right;
          color:white;
-}
+         }
 
 .bgc    {background-color: turquoise ;}
 .pos-f  {position: fixed;} 
