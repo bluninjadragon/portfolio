@@ -12,16 +12,17 @@ THE WHOLE THING-->
     <title>Jason Hsieh</title>
     <link rel="stylesheet" href="./Assets/css/css/style.css">
 </head>
-<body class=bcg-img>
-    <header class="bgc pos-s">
+<body class="bcg-img">
+    <header class="bgc">
         <h1 class="center color-w">Jason Hsieh</h1>
         <nav>
-            <div class=hyperlink>
+            <div class="hyperlink">
                 <h1>
-                    <a  href="https://github.com/">GitHub
-                    <a  href="https://github.com/">Portfolio     
+                    <a  href="#aboutme">About Me
+                    <a  href="#">GitHub
+                    <a  href="#work">Work     
                     </a>
-                    <a  href="https://www.whitehouse.gov/contact/">Contact
+                    <a  href="#">Contact
                     </a>
                     
                 </h1>                                
@@ -29,10 +30,10 @@ THE WHOLE THING-->
         </nav>
     </header>
     <main>
-        <!--going to try for a wide spread about me that is smaller
+        <!--going to try for a wide spread about me that is same width
         the first work figure below it. Spread out the text margins-->
         <section>
-            <h2>About Me</h2>
+            <h2 id="aboutme">About Me</h2>
             <p>Welcome to my website! Here I'll you'll find
                 my favorite stock picks and give my personal
                 opinion on market sentiment.
@@ -45,8 +46,8 @@ THE WHOLE THING-->
         <!--large figure. this should be the highlight of the page-->
         <section class="row justify-center">
             <div class="card-column">
-            <figure class="card code-card">
-                <h2 class="card-header">Content One</h2>
+            <figure class="sm-card">
+                <h2 class="card-header" id="work">Content One</h2>
                 <div class="card-body">
                 <p>Content One</p>
                 </div>
@@ -58,21 +59,36 @@ THE WHOLE THING-->
         to our CSS Snippet Cheatsheet assignment
     
         maybe try making invisible flexboxes that glow after being hovered on? -->
-        <section class="row justify-center">
+        <section class="w-50 row justify-center">
             <div class="card-column">
-            <figure class="card code-card">
-                <h2 class="card-header">Flexbox Row</h2>
+            <figure class="sm-card">
+                <h2 class="card-header">work</h2>
                 <div class="card-body">
-                <p>Use these three properties to create a Flexbox row layout.</p>
+                <p>Work</p>
+                </div>
+            </figure>
+            </div>
+        </section> <section class="w-50 row justify-center">
+            <div class="card-column">
+            <figure class="sm-card">
+                <h2 class="card-header">work</h2>
+                <div class="card-body">
+                <p>Work</p>
                 </div>
             </figure>
             </div>
         </section>
+        
     </main>
-    <!-- try to eventually include IG and fake twitter links/icons-->
-    <footer>
-        <p>Copyright Jayce Studios 2021 © </p>
+    <!-- try to eventually include IG, LinkedIn and fake twitter links/icons-->
+    <footer class="hyperlink center marginrt">
+        <h1>
+            <a  href="https://www.instagram.com/sk_jayce01/?hl=en">Instagram
+            <a  href="https://twitter.com/bluninjadragon">Twitter     
+            </a>
+            <a  href="https://www.linkedin.com/in/jason-hsieh-86023b27/">LinkedIn
+            </a>
+        </h1>
     </footer>
-    
 </body>
 </html>
