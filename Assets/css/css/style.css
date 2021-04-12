@@ -26,7 +26,7 @@ main section {
 /* atomic: sizing, color and aligning*/
 
 .t-0    {top: 0;}
-.w-100  {width: 100%;}
+.w-100  {width:100%;}
 .w-50   {width: 50%;}
 .m-0    {margin: 0;}
 .pv     {padding: 24px 0;}
@@ -80,17 +80,7 @@ main section {
     color: white;
 }
 
-
-/*resizing for multiple devices*/
-  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-
-.card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 0;
-    }
+/*images*/
 
 .bcg-img {
     background-image: url(https://566259-1826367-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg);
@@ -132,6 +122,16 @@ main section {
     background-size: 55%;
     background-position:right;
 }
+/*resizing for multiple devices*/
+  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 0;
+    }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
