@@ -4,10 +4,7 @@
     
 }
 
-/*come back to this. try to make it so that there is large
-padding but not fixed. Make background fixed */
-
-/*also see if you can combine to make this object oriented for now*/
+/*reset top margin for h1 and body to offset google's stylesheet*/
 
 h1 {
     margin: 0;
@@ -26,10 +23,8 @@ main section {
     
 }
 
-.bgc    {background-color: rgba(64,224,208,.75)}
-.pos-f  {position: fixed;} 
-.pos-s  {position: sticky;
-         top: 0;}
+/* atomic: sizing, color and aligning*/
+
 .t-0    {top: 0;}
 .w-100  {width: 100%;}
 .w-50   {width: 50%;}
@@ -37,14 +32,28 @@ main section {
 .pv     {padding: 24px 0;}
 .inline {display:inline}
 .center {text-align: center;}
-.color-w{color: white;}
-.jason  {width: 50%;
-         height: 50%;}
 .txtrt  {text-align: right;}
 .m-about {margin-left: 20%;
           margin-right: 20%}
-
 .height-nm   {height: 500px}
+.height-bboy {height:600px}
+.pos-f  {position: fixed;} 
+.pos-s  {position: sticky;
+         top: 0;}
+.color-w{color: white;}
+.bgc    {background-color: rgba(64,224,208,.75)}
+.justify-center {
+    justify-content: center;
+  }
+.align-center {
+    align-items: center;
+}
+
+/*object oriented*/
+
+.jason  {width: 50%;
+         height: 50%;}
+
 
 .hyperlink a {color:white;
              display:inline;
@@ -53,6 +62,14 @@ main section {
              justify-content: space-between;
              } 
   
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    }
 
 .sm-card {
     display: flex;
@@ -63,22 +80,8 @@ main section {
     color: white;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    }
 
-.justify-center {
-    justify-content: center;
-  }
-
-.align-center {
-    align-items: center;
-}
-
+/*resizing for multiple devices*/
   /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
 
 .card-column {
@@ -90,7 +93,7 @@ main section {
     }
 
 .bcg-img {
-    background-image: url();
+    background-image: url(https://566259-1826367-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;}
@@ -109,10 +112,10 @@ main section {
 }
 
 .bcg-cerner {
-    background-image: url(https://previews.123rf.com/images/foxaon/foxaon1603/foxaon160300554/53724839-stock-market-chart-background.jpg);
+    background-image: url(http://media.bizj.us/view/img/4735251/cerner.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment:fixed;
+    background-position: right; 
 }
 
 .bcg-investing {
@@ -123,10 +126,11 @@ main section {
 }
 
 .bcg-bboy {
-    background-image: url(https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/10003933_10203478860669268_6474881974307247493_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=174925&_nc_ohc=gY1zCOdNHncAX8dwQuV&_nc_ht=scontent-ort2-1.xx&oh=04ed111faba7046cf3cd5ab43debb7ff&oe=60978018);
+    background-image: url(https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/558093_10200836348888125_1549623652_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=de6eea&_nc_ohc=ypMPIyPUEM0AX-nJGyV&_nc_ht=scontent-ort2-1.xx&oh=73cbdee0e56b2395522bd066cc24a994&oe=609AFB09);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 55%;
+    background-position:right;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
@@ -151,7 +155,7 @@ main section {
     header nav div, footer h1 {
         text-align: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
   
@@ -164,10 +168,12 @@ main section {
     }
 }
 
-/* Instagram: Use an attribute selector to select all <a> elements that have an href value that ends with '.css' */
+/*Instagram: Use an attribute selector to select all <a> elements that have an href value that ends with '.css' */
+/*Couldn't get the below to work! Ugh! Will keep in comments for future troubleshooting
 a[href$='.com/sk_jayce01/?hl=en']::before {
     background-image: url("./images/Instagram_logo_2016.svg.png");
     background-size: 100%;
     display: inline-block;
     content: ""
 }
+*/
