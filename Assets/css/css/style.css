@@ -22,16 +22,10 @@ body {
 main {font-size: 15pt;}
 
 main section {
-    width: 100%;
-    margin: auto;
     text-align: center;
 }
 
-nav     {text-align: right;
-         color:white;
-         }
-
-.bgc    {background-color: turquoise ;}
+.bgc    {background-color: rgba(64,224,208,.75)}
 .pos-f  {position: fixed;} 
 .pos-s  {position: sticky;
          top: 0;}
@@ -48,10 +42,11 @@ nav     {text-align: right;
 
 .hyperlink a {color:white;
              display:inline;
-             margin: 10px;
-             text-decoration:none;} 
-
-.marginrt {margin: 0, 100px;}
+             margin: 5px;
+             text-decoration:none;
+             justify-content: space-between;
+             } 
+  
 
 .sm-card {
     display: flex;
@@ -62,31 +57,41 @@ nav     {text-align: right;
     color: white;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    }
+
 .justify-center {
     justify-content: center;
   }
 
-.row {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-margin-left: -1.5rem;
-margin-right: -1.5rem;
-}
+  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    }
 
 .bcg-img {
     background-image: url(https://previews.123rf.com/images/foxaon/foxaon1603/foxaon160300554/53724839-stock-market-chart-background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100;}
+    background-size: cover;}
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
     
     .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 0 0 45%;
+      max-width: 45%;
     }
   
     /* select the last child to grow to full width if it has space to grow */
@@ -99,8 +104,10 @@ margin-right: -1.5rem;
 /*center nav bar when in mobile mode with a max-width*/
 
 @media screen and (max-width: 991px) {
-    header nav div {
+    header nav div, footer h1 {
         text-align: center;
+        display: flex;
+        justify-content: space-between;
     }
 }
   
@@ -108,8 +115,8 @@ margin-right: -1.5rem;
 @media screen and (min-width: 992px) {
 
     .card-column {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
+        flex: 0 0 45%;
+        max-width: 45%;
     }
 }
 
