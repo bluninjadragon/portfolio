@@ -117,6 +117,18 @@ main section {
     background-size: 55%;
     background-position:right;
 }
+
+.bcg-pg {
+    background-image: url(https://cmitsolutions.com/erie/wp-content/uploads/sites/19/2018/07/password_security_feature.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+
+.bcg-workday {
+    background-image: url(https://www.acquiremag.com/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_700/MTU5MjYxNjExOTcyODk1OTU4/runwelldeskclock.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
 /*resizing for multiple devices*/
   /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
 
