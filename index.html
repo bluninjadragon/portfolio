@@ -5,6 +5,7 @@ THE WHOLE THING-->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,8 @@ THE WHOLE THING-->
     <title>Jason Hsieh</title>
     <link rel="stylesheet" href="./Assets/css/main.css">
 </head>
-<body class="bcg-img">
+
+<body>
     <!--can't figure out why turquoise bar does not extend all the way (try scrolling to the right)-->
     <header class="hero is-primary">
         <h1 class="hero-body is-large container title">Jason Hsieh</h1>
@@ -20,120 +22,128 @@ THE WHOLE THING-->
             <div class="hyperlink navbar-menu">
                 <h1 class="navbar-end">
                     <div>
-                        <a  href="#aboutme">About Me                        
+                        <a href="#aboutme">About Me
                         </a>
-                        <a  href="#work">Work     
+                        <a href="#work">Work
                         </a>
-                        <a  href="./Assets/images/Profile (1).pdf">Resume     
+                        <a href="./Assets/images/Profile (1).pdf">Resume
                         </a>
-                        <a  href="https://www.linkedin.com/in/jason-hsieh-86023b27/">LinkedIn     
+                        <a href="https://www.linkedin.com/in/jason-hsieh-86023b27/">LinkedIn
                         </a>
-                        <a  href="https://github.com/bluninjadragon/">GitHub
-                        </a>  
+                        <a href="https://github.com/bluninjadragon/">GitHub
+                        </a>
                     </div>
-                    
+
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Contact
                         </a>
                         <div class="navbar-dropdown">
                             <a class="navbar-item" href="https://www.instagram.com/sk_jayce01/?hl=en">
-                              Instagram
+                                Instagram
                             </a>
                             <a class="navbar-item" href="https://twitter.com/bluninjadragon">
-                              Twitter
+                                Twitter
                             </a>
                             <a class="navbar-item" href="jwbootcamp@gmail.com">
-                              Email
+                                Email
                             </a>
-                    </div>
-                    
-                    
-                </h1>                                
+                        </div>
+
+
+                </h1>
             </div>
         </nav>
     </header>
-    <main class="is-white">
+    <main class="is-small">
         <!--going to try for a wide spread about me that is same width
         the first work figure below it. Spread out the text margins-->
         <!--id given to about me header to link to bottom of page-->
 
-        <section class="m-about">
-            <h2 id="aboutme">About Me</h2>
-            <p>Welcome to my website! I'm currently based in Chicago as 
+        <section class="section bcg-about">
+            <h2 id="aboutme" class="title color-w">About Me</h2>
+            <p class="subtitle color-w">Welcome to my website! I'm currently based in Chicago as
                 a striving developer
                 with a passion for design, dance, music, cooking
                 and investing.
             </p>
-            <p>Below you will find my previous experience and projects.
+            <p class="subtitle color-w"> Below you will find my previous experience and projects.
             </p>
-            <img class="jason" src="./Assets/images/Profile Picture.jpg" alt=jason >
-        </section>
-        <!--large figure. this should be the highlight of the page-->
-        <section class="row justify-center align-center bcg-nm height-nm">
-            <div class="card-column">
-            <figure class="sm-card hyperlink">
-                    <!--id given to header to link to bottom of page-->
-                <a href=""><h2 class="card-header title color-w" id="work">Full Stack Projects
+            <figure class="hyperlink">
+                <!--id given to header to link to bottom of page-->
+                <a href="">
+                    <h2 class="title center color-w" id="work">Full Stack Projects
                     </h2>
             </figure>
-            </div>
-        </section>
-        <!--the next 4 sections will be smaller cards using Flexbox.
+            <!--the next 4 sections will be smaller cards using Flexbox.
             Currently only linked to the text, and NOT the image, but
-            will be a goal of mine. Also eentually, I would like 
-            that they should be able to hover 
+            will be a goal of mine. Also eentually, I would like
+            that they should be able to hover
             with a slow neon gradient similar
             to our CSS Snippet Cheatsheet assignment
-    
+
         maybe try making invisible flexboxes that glow after being hovered on? -->
-        <section class="row">
-            <a href="https://bluninjadragon.github.io/Password-Generator-3/">
-                <div class="container bcg-pg is-clickable is-fluid">
-            <figure class="sm-card hyperlink">
-                <h2 class="title color-w">Password Generator</h2>
-                <div class="card-body">
-                <p class="subtitle color-w">A simple password generator that chooses between a number of characters, at least one: lowercase letter, upper case letter, number, and a special character 
-                </p>
-                </div>
-            </figure>
-            </div></a>
-
-            <a href="https://bluninjadragon.github.io/Scheduler-5/">
-            <div class="container bcg-workday is-clickable is-fluid">
-            <figure class="sm-card hyperlink">
-                <h2 class="title color-w">Work Day Calendar</h2>
-                <div class="card-body">
-                <p class="subtitle color-w">A simple calendar app for scheduling your work day by utilizing and focusing on local storage</p>
-                </p>
-                </div>
-            </figure>
-            </div></a>
-
-            <div class="card-column bcg-investing">
-            <figure class="sm-card hyperlink">
-                <a href="https://www.cnbc.com/"><h2 class="card-header">Investments</h2>
-                </a>
-                <div class="card-body">
-                <a href="https://www.cnbc.com/">Investment Ideas Worth Sharing</p>
-                </a>
-                </div>
-            </figure>
-            </div>
-
-            <div class="card-column bcg-bboy">
-                <figure class="sm-card hyperlink">
-                    <a href="https://www.instagram.com/p/BS23777l_l9/"><h2 class="card-header">Break Dance</h2>
+            <section class="columns">
+                <div class="column">
+                    <a href="https://bluninjadragon.github.io/Password-Generator-3/">
+                        <div class="container is-clickable is-fluid">
+                            <figure class="sm-card hyperlink">
+                                <h2 class="title color-w">Password Generator</h2>
+                                <div class="card-body">
+                                    <p class="subtitle color-w">A simple password generator that chooses between a
+                                        number of
+                                        characters, at least one: lowercase letter, upper case letter, number, and a
+                                        special
+                                        character
+                                    </p>
+                                </div>
+                            </figure>
+                        </div>
                     </a>
-                    <div class="card-body">
-                    <a href="https://www.instagram.com/p/BS23777l_l9/">A sample clip from practice</p>
+
+                    <a href="https://bluninjadragon.github.io/Scheduler-5/">
+                        <div class="container is-clickable is-fluid">
+                            <figure class="sm-card hyperlink">
+                                <h2 class="title color-w">Work Day Calendar</h2>
+                                <div class="card-body">
+                                    <p class="subtitle color-w">A simple calendar app for scheduling your work day by
+                                        utilizing
+                                        and focusing on local storage</p>
+                                    </p>
+                                </div>
+                            </figure>
+                        </div>
                     </a>
+                </div>
+
+                <div>
+                    <div class="container is-clickable is-fluid">
+                        <figure class="sm-card hyperlink">
+                            <a href="https://www.cnbc.com/">
+                                <h2 class="title color-w">Investments</h2>
+                            </a>
+                            <div class="card-body">
+                                <a href="https://www.cnbc.com/">Investment Ideas Worth Sharing</p>
+                                </a>
+                            </div>
+                        </figure>
                     </div>
-                </figure>
+                    <div class="container is-clickable is-fluid">
+                        <figure class="sm-card hyperlink">
+                            <a href="https://www.instagram.com/p/BS23777l_l9/">
+                                <h2 class="title color-w">Break Dance</h2>
+                            </a>
+                            <div class="card-body">
+                                <a href="https://www.instagram.com/p/BS23777l_l9/">A sample clip from practice</p>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
-        </section>
-        
+            </section>
+
     </main>
     <!-- try to eventually include IG, LinkedIn and fake twitter links/icons-->
     <!--id given to footer to link to bottom of page-->
 </body>
+
 </html>
